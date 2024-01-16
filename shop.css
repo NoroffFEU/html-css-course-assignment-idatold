@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/*------------header-----------*/
+nav {
+  .navbar {
+    background-color: #0A3641;
+    color: #C2964C;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: normal;
+     }
+      
+  }
+
+  .logo {
+    position: relative;
+     top: 0;
+     left 0;
+     width: 101px;
+     height: 24px;
+ }
+
+  a:hover { 
+    color: white;
+  }
+
+.bag {
+    width: 47px;
+    height: 47px;
+    flex-shrink: 0;
+}
+
+a {
+    color: #C2964C;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+body {
+    background-color: #698388;
+    width: 100%;
+        font-family: 'League Gothic', sans-serif;
+
+    }
+
+    .pitch-text {
+      color: #ffffff;
+      text-align: right;
+      font-family: poppins, sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 1242px;
+      height: 196px;
+      flex-shrink: 0;
+    }
+
+    .pitch-text-lower {
+      color: #ffffff;
+      text-align: left;
+      font-family: poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 1242px;
+      height: 196px;
+      flex-shrink: 0;
+    }
+
+    
+
+    footer {
+      background: #0A3641;
+      
+    }
+
+    #footer-links {
+      color: #C2964C;
+      font-size: 1rem;
+    }

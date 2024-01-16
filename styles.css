@@ -1,82 +1,373 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
-@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">);
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*------------header--------------------------------------------------------------------------*/
+.navbar-content {
+display: flex;
+justify-content: space-between;
+width: 100%;
+place-content: center;
+margin-top: 0%;
+font-size: 2rem;
+padding: 0.5rem;
+gap: 5rem;
+
+}
+
+
+.navbar {
+  background-color: #0a3641;
   
-/*------------header-----------*/
-  .navbar {
-    background-color: #0A3641;
-    color: #C2964C;
-    padding-top: 2rem;
-    text-align: center;
-    font-size: 2rem;
-    font-style: normal;
-    line-height: normal;
-     }
 
-  a {
-    color: #C2964C;
-    text-decoration: none;
-    
-  }
+}
 
-  a:hover { 
-    color: white;
-  }
+.nav-link-wrapper  {
+  display: flex;
+  gap: 2rem;
+  place-items: end;
 
-.bag {
-    width: 47px;
-    height: 47px;
-    flex-shrink: 0;
+  
+
+
+
 }
 
 
 
-.headerimage {
-    width: 100%;
-    height: 560px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+
+.link-logo-img {
+  width: 137px;
+}
+
+
+
+a {
+  color: #c2964c;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: white;
+  
+}
+
+.burger-meny {
+  display: none;
+}
+
+
+
+/* .bag {
+  display: none;
+  width: 47px;
+  height: 47px;
+  
+  
+} */
+
+.header-image-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 33vh;
+  justify-content: center;
+
+  
+}
+
+.logo-jpg  {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  padding-bottom: 15rem;
+  
+  
+  
+}
+
+.header-image {
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+
+
+
+/*------------------------------------------Body----------------------------------------*/
+body {
+  background-color: #698388;
+  width: 100%;
+  font-family: "League Gothic", "sans-serif";
+}
+
+.image-and-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overlay-link-shop {
+  flex-wrap: wrap;
+  position: absolute;
+  text-decoration: underline;
+  color: #fff;
+  background-color: #c2964c;
+  padding: 0.625rem 12.45rem;
+  font-size: 3rem;
+  bottom: -5rem;
+  left: 14.44rem;
+}
+
+.overlay-link-about {
+  display: flex;
+  position: absolute;
+  text-decoration: underline;
+  color: #fff;
+  background-color: #0a3641;
+  padding: 0.625rem 15.938rem;
+  font-size: 3rem;
+  bottom: -10rem;
+  left: 59.5rem;
+  
+}
+
+.img-background-yellow-jacket {
+  padding: 2rem;
+  background-color: aqua;
+}
+
+/*----------------------------------------------------------------*/
+#blob-image {
+  display: flex;
+  align-items: center;
+  width: 57.875rem;
+  height: 32.75rem;
+}
+
+.overlay-newsletter-text {
+  color: white;
+  font-family: "Poppins", "sans-serif";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  display: flex;
+  width: 639px;
+  height: 114px;
+  position: relative;
+}
+
+.newsletter-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.procent-icon {
+  display: flex;
+  width: 7.563rem;
+  height: 7.543rem;
+  flex-wrap: wrap;
+}
+
+/*----------------------------------------footer---------------------------------------------*/
+.footer-first-row-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20rem;
+
+}
+
+.logo-footer {
+  flex-wrap: wrap;
+}
+
+.social-media-wrapper {
+  display: flex;
+  font-size: 2rem;
+  color: #ffffff;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.icons-social-media {
+  display: flex;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+.form-wrapper {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+
+
+
+input [type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+  
+
+
+
+.undertext-form {
+  font-size: 1.5rem;
+}
+
+.small-text-form {
+  font-size: 0.875rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: League Gothic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.link-wrapper {
+  justify-content: center;
+}
+
+.link-wrapper a {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 2rem;
+  justify-content: space-evenly;
+}
+
+.contact-wrapper {
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.icon-mail {
+  width: 1.643rem;
+  height: 1.699rem;
+  flex-shrink: 0;
+}
+
+.icon-phone {
+  width: 1.643rem;
+  height: 1.699rem;
+  flex-shrink: 0;
+}
+
+.contact-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.icons-bottom-wrapper {
+  align-items: center;
+  margin-top: auto;
+  padding-right: 10rem;
+}
+
+.copyright-wrapper {
+  color: #c2964c;
+  font-family: "poppins", "sans-serif";
+  display: flex;
+  margin-top: auto;
+}
+
+.copyright-image {
+  width: 1.358rem;
+  height: auto;
+  margin-top: auto;
+
+}
+
+footer {
+  background: #0a3641;
+  width: auto;
+  padding-top: 4rem;
+
+  flex-shrink: 0;
+}
+
+
+
+
+
+.footer-logo {
+  width: 392.68px;
+  height: 95.675px;
+  margin-top: auto;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 2rem;
+  gap: 20rem;
+  width: 80%;
+  margin: auto;
+  margin-top: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------media----------------------------------------------------------------------------*/
+@media (max-width: 550px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .burger-meny {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .icons-bottom-wrapper {
+   display: none;
+
    }
 
-.logo {
-   position: relative;
-    top: 0;
-    left 0;
-    width: 101px;
-    height: 24px;
-}
+   .contact-wrapper {
+    display: none;
 
-.main-logo {
-    position: absolute;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    width: 345px;
-    height: 186px;
     
-    
-}
-
-body {
-    background-color: #698388;
-    width: 100%;
-        font-family: 'League Gothic', sans-serif;
-
-    }
-
-    .newslettertext {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-weight: normal;
-        line-height: normal;
-    }
+   }
