@@ -132,8 +132,7 @@
     flex-wrap: wrap;
   }
 
-  .container {
-  }
+  
 }
 
 @media (max-width: 600px) {
@@ -175,6 +174,10 @@
   }
 
   .h1-wrapper-with-blob h1 {
+    display: none;
+  }
+
+  .logo-jpg img {
     display: none;
   }
 }
