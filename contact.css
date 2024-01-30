@@ -171,6 +171,10 @@ h2 {
   background-color: #698388;
 }
 
+.map-swap {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .form-container {
     display: flex;
@@ -203,5 +207,13 @@ h2 {
 
   main {
     background-color: #0a3641;
+  }
+
+  .map-swap {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
   }
 }
