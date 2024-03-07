@@ -42,7 +42,7 @@ h2 {
   font-size: 48px;
   font-style: normal;
   color: #c2964c;
-  background-image: url("assets/images/Contact/blobtopcontact.png");
+  background-image: url("../assets/images/Contact/blobtopcontact.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40% 100%;
@@ -71,7 +71,7 @@ h2 {
   border-radius: 10px;
   height: 80rem;
   align-items: center;
-  background: url("assets/images/Contact/bblobbackgroundcontactform2.png");
+  background: url("../assets/images/Contact/bblobbackgroundcontactform2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
