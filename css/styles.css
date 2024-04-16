@@ -25,6 +25,8 @@
   display: none;
 }
 
+
+
 /*-------------------------main---------------------------------------*/
 
 .container {
@@ -115,6 +117,9 @@
   margin-bottom: 13rem;
   flex-wrap: wrap;
 }
+
+
+
 /*-------------------media---------------------*/
 @media (max-width: 562px) {
   .yellow {
@@ -182,6 +187,7 @@
   }
 }
 
+
 @media (max-width: 800px) {
   .image-1 {
     width: 578px;
@@ -198,6 +204,8 @@
   .h1-wrapper-with-blob {
     width: 578px;
   }
+
+  
 }
 
 @media (max-width: 1023px) {
