@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 29px;
-  background: #efefef;
+  background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   max-width: 90vh;
   max-height: auto;
@@ -12,6 +12,7 @@
   align-items: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .h1cart {
@@ -78,6 +79,35 @@
   height: 2px;
   margin: auto;
   margin-top: 2rem;
+}
+
+.product {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.product img {
+  width: 300px;
+  height: 400px;
+}
+
+.product h1 {
+  padding: 2rem;
+}
+
+#add-to-cart {
+  background-color: #c2964c;
+  color: #fff;
+  padding: 1rem;
+  font-family: "League Gothic", "sans-serif";
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+border-radius: 5px;
+margin-top: 1rem;
 }
 
 @media (max-width: 845px) {
