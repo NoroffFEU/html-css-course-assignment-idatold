@@ -1,5 +1,6 @@
 import { showLoadingSpinner, hideLoadingSpinner } from "./loader.mjs";
 import { fetchDataFromAPI } from "./common.mjs";
+import { hamMenu } from "./hamburger.mjs";
 
 async function fetchProductDetails() {
   try {

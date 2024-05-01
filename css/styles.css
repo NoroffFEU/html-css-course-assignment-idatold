@@ -26,26 +26,23 @@
 }
 
 .carousel {
-  max-width:60%;;
+  max-width: 60%;
   overflow: hidden;
   background-color: #fff;
   padding: 4rem;
   margin: auto;
-border-radius: 5px;
-margin-bottom: 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 .carousel-container {
   display: flex;
   transition: transform 0.5s ease;
-  
- 
 }
 .carousel-link {
   color: #0a3641;
   text-transform: uppercase;
   text-align: center;
-
 }
 .carousel-link :hover {
   color: #c2964c;
@@ -55,8 +52,6 @@ margin-bottom: 2rem;
   flex: 0 0 33.33%; /* Display three products at a time */
   margin: 0 10px;
 }
-
-
 
 /*-------------------------main---------------------------------------*/
 
@@ -149,8 +144,6 @@ margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
-
-
 /*-------------------media---------------------*/
 @media (max-width: 562px) {
   .yellow {
@@ -167,8 +160,6 @@ margin-bottom: 2rem;
     max-width: 0px;
     flex-wrap: wrap;
   }
-
-  
 }
 
 @media (max-width: 600px) {
@@ -218,7 +209,6 @@ margin-bottom: 2rem;
   }
 }
 
-
 @media (max-width: 800px) {
   .image-1 {
     width: 578px;
@@ -235,8 +225,6 @@ margin-bottom: 2rem;
   .h1-wrapper-with-blob {
     width: 578px;
   }
-
-  
 }
 
 @media (max-width: 1023px) {

@@ -13,6 +13,42 @@ async function fetchData() {
         const container = document.getElementById("jackets-card");
 
         // Update UI with fetched data
+        renderData(data);
+
+        hideLoadingSpinner();
+
+        // Function to handle filter button click event
+        function handleFilter(gender) {
+            return function () {
+                if (gender === 'All') {
+                    renderData(data);
+                } else {
+                    const filteredData = data.filter(item => item.gender === gender);
+                    renderData(filteredData);
+                }
+            }
+        }
+
+        // Event listeners for filter buttons
+        document.getElementById("filter-men").addEventListener("click", handleFilter("Male"));
+        document.getElementById("filter-women").addEventListener("click", handleFilter("Female"));
+        document.getElementById("filter-all").addEventListener("click", handleFilter("All"));
+
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        hideLoadingSpinner();
+    }
+}
+
+async function renderData(data) {
+    try {
+        showLoadingSpinner();
+
+        // Get the container element where the fetched data will be displayed
+        const container = document.getElementById("jackets-card");
+        container.innerHTML = ""; // Clear previous content
+
+        // Update UI with fetched data
         data.forEach((item) => {
             // Create a div to hold each item's information
             const itemDiv = document.createElement("div");
@@ -62,12 +98,17 @@ async function fetchData() {
         });
 
         hideLoadingSpinner();
+
     } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error rendering data:", error);
         hideLoadingSpinner();
     }
 }
 
 fetchData();
+
+
+
+
 
 

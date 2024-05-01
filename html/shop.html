@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="icon"
-      type="icon"
-      sizes="16x16"
-      href="./favicon.ico"
-    />
+    <link rel="icon" type="icon" sizes="16x16" href="./favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays</title>
@@ -17,7 +12,6 @@
       content="For Him and Her – Explore RainyDays' Shop Page curated for men and women. Uncover a diverse collection of adventure-ready jackets that seamlessly blend style and durability. !"
     />
     <script src="/javascript/index.mjs" type="module"></script>
-    
   </head>
   <body>
     <nav class="navbar">
@@ -45,7 +39,6 @@
               class="bag"
           /></a>
         </div>
-        
       </div>
     </nav>
 
@@ -65,36 +58,64 @@
           Embrace rainy days with style – welcome to Rainydays, where fashion
           meets functionality!<br />Pushing the Comfort Zone since 1991.
         </h1> -->
-       
-        <h1 class="shop-text">Jackets for every occasion</h1>
-        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster" id="loading-spinner">
-          <div class="wheel"></div>
-          <div class="hamster">
-            <div class="hamster__body">
-              <div class="hamster__head">
-                <div class="hamster__ear"></div>
-                <div class="hamster__eye"></div>
-                <div class="hamster__nose"></div>
-              </div>
-              <div class="hamster__limb hamster__limb--fr"></div>
-              <div class="hamster__limb hamster__limb--fl"></div>
-              <div class="hamster__limb hamster__limb--br"></div>
-              <div class="hamster__limb hamster__limb--bl"></div>
-              <div class="hamster__tail"></div>
-            </div>
+
+      <h1 class="shop-text">Jackets for every occasion</h1>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Jackets</title>
+        </head>
+        <body>
+          <div class="filter-buttons">
+            <button class="filter-button" id="filter-all">All Jackets</button>
+            <button class="filter-button" id="filter-men">Men's Jackets</button>
+            <button class="filter-button" id="filter-women">
+              Women's Jackets
+            </button>
           </div>
-          <div class="spoke"></div>
+
+          <div id="jackets-card"></div>
+        </body>
+      </html>
+
+      <div
+        aria-label="Orange and tan hamster running in a metal wheel"
+        role="img"
+        class="wheel-and-hamster"
+        id="loading-spinner"
+      >
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
         </div>
-        <section id="jackets-container">
+        <div class="spoke"></div>
+      </div>
+      <section id="jackets-container">
         <div id="jackets-card"></div>
       </section>
-    
-        <!-- <div class="shop-images-wrapper">
+
+      <!-- <div class="shop-images-wrapper">
           <div class="womens-shop-wrapper">
             <img
               class="womens-shop-img"
               src="../assets/images/SHOP/shop womens collection.png"
-              alt="A woman standing under a waterfall in a rainjacket, screaming with joy"
+              alt="A woman standing under a waterfall in a rain jacket, screaming with joy"
             />
             <a class="womens-shop-button button" href="../html/womensshop.html"
               >WOMEN'S COLLECTION</a>
@@ -234,6 +255,5 @@
         </div>
       </div>
     </footer>
-   
   </body>
 </html>

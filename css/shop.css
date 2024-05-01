@@ -181,6 +181,30 @@ body {
   color: #c2964c; 
 }
 
+.filter-buttons {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  
+}
+.filter-button {
+  background-color: #c2964c; 
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 20px;
+  font-family: "league gothic", "sans serif";
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+
+
+  }
+
+  button {
+    cursor: pointer;
+  }
+
 /*------------------------mediaq----------------------------*/
 
 @media (max-width: 386px) {
