@@ -15,7 +15,7 @@
   padding: 2rem;
 }
 
-.h1cart {
+h1 {
   display: flex;
   justify-content: center;
   color: #0a3641;
@@ -28,6 +28,62 @@
   letter-spacing: 5px;
   padding-top: 5rem;
   margin: auto;
+}
+
+
+.cart-item {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.cart-box-outer {
+  display: flex;
+flex-direction: row;
+}
+
+.remove-btn {
+  color: #fff;
+  background-color: #c2964c;
+  font-family: league gothic;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: #fff;
+}
+
+button  {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #0a3641;
+  
+}
+ p {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.cart-item img {
+  width: 150px;
+  
+}
+
+.checkout-text {
+  padding: 1rem;
+  color: #0a3641;
+}
+
+#total-price {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ font-size: 2rem;
 }
 
 .h2cart {
@@ -106,9 +162,43 @@
   font-size: 1rem;
   text-transform: uppercase;
   border: none;
-border-radius: 5px;
-margin-top: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
+
+/*----------cartForm-----------*/
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
 
 @media (max-width: 845px) {
   .cart-box {

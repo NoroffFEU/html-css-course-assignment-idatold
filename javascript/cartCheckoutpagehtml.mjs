@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     displayCartItems();
     attachEventListeners();
 });
@@ -10,22 +10,22 @@ function displayCartItems() {
     let total = 0;
 
     cartItems.forEach((item, index) => {
-        const itemTotal = item.price * item.quantity;
+        const itemTotal = item.price;
         total += itemTotal;
 
         const itemDiv = document.createElement('div');
         itemDiv.className = 'cart-item';
 
-        const img = document.createElement('img');
-        img.src = item.image;
-        img.alt = item.name;
-        img.style.width = "50px";
-        img.style.height = "50px";
-        itemDiv.appendChild(img);
-
         const itemName = document.createElement('h3');
         itemName.textContent = item.name;
         itemDiv.appendChild(itemName);
+
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        itemDiv.appendChild(img);
+
+        
 
         const itemSize = document.createElement('p');
         itemSize.textContent = `Size: ${item.size}`;
@@ -44,19 +44,15 @@ function displayCartItems() {
         cartContainer.appendChild(itemDiv);
     });
 
-    if (cartItems.length > 0) {
-        const totalDiv = document.createElement('div');
-        totalDiv.id = 'total-price';
-        totalDiv.textContent = `Total Price: $${total.toFixed(2)}`;
-        cartContainer.appendChild(totalDiv);
-    } else {
-        cartContainer.textContent = 'Your cart is empty';
-    }
+    const totalDiv = document.createElement('div');
+    totalDiv.id = 'total-price';
+    totalDiv.textContent = `Total Price: $${total.toFixed(2)}`;
+    cartContainer.appendChild(totalDiv);
 }
 
 function attachEventListeners() {
     const cartContainer = document.getElementById('cart-items');
-    cartContainer.addEventListener('click', function(event) {
+    cartContainer.addEventListener('click', function (event) {
         if (event.target.classList.contains('remove-btn')) {
             const index = parseInt(event.target.dataset.index);
             removeItem(index);
@@ -65,17 +61,20 @@ function attachEventListeners() {
 }
 
 function addItemToCart(newItem) {
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-    const existingItemIndex = cartItems.findIndex(item => item.name === newItem.name && item.size === newItem.size);
-
-    if (existingItemIndex === -1) { // Only add new items that do not exist in the cart
-        newItem.quantity = 1; // Each item can only be added once
-        cartItems.push(newItem);
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        displayCartItems();
-    } else {
-        alert("This item is already in your cart.");
+    // Check if newItem has all necessary properties
+    if (typeof newItem.price === 'undefined' || typeof newItem.quantity === 'undefined' || isNaN(newItem.price) || isNaN(newItem.quantity)) {
+        console.error("Attempted to add item with invalid or missing price/quantity:", newItem);
+        alert("Failed to add item. Price and quantity must be numeric and not undefined.");
+        return; // Exit the function if data is not valid
     }
+
+
+
+
+
+
+
+
 }
 
 function removeItem(index) {
