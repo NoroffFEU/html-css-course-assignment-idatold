@@ -25,7 +25,7 @@ function displayCartItems() {
         img.alt = item.name;
         itemDiv.appendChild(img);
 
-        
+
 
         const itemSize = document.createElement('p');
         itemSize.textContent = `Size: ${item.size}`;
