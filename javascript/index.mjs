@@ -1,13 +1,14 @@
 import { showLoadingSpinner, hideLoadingSpinner } from './loader.mjs';
 import { fetchDataFromAPI } from './common.mjs';
 
+
 async function fetchData() {
     try {
         showLoadingSpinner();
 
         // Fetch data using the imported function
         const data = await fetchDataFromAPI();
-        console.log(data)
+        
 
         // Get the container element where the fetched data will be displayed
         const container = document.getElementById("jackets-card");

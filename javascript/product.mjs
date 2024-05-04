@@ -8,7 +8,7 @@ async function fetchProductDetails() {
     // Get the product ID from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get("id");
-    console.log("Product ID:", productId); // Log product ID for debugging
+   
 
     if (!productId) {
       throw new Error("Product ID is missing in the URL");
@@ -16,7 +16,7 @@ async function fetchProductDetails() {
 
     // Fetch product details from the API based on the product ID
     const productData = await fetchDataFromAPI();
-    console.log("Product Data:", productData); // Log product data for debugging
+    
 
     // Find the product with the matching ID
     const product = productData.find(product => product.id === productId);
@@ -64,7 +64,7 @@ async function fetchProductDetails() {
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
       // Confirmation message or UI update
-      console.log("Product added to cart:", productToAddToCart);
+      
       alert("Product added to cart!");  // Optional: alert user or show some UI feedback
     });
 
