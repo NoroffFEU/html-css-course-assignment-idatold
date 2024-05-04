@@ -1,0 +1,76 @@
+/*--------------------------Main Womens Shop------------------------
+  This page is not clickable towards the product page, since i have not made that site yet.*/
+
+.h1-womens {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: left;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #efefef;
+  font-family: "poppins", "sans serif";
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.all-jackets-wrap {
+  display: flex;
+  gap: 80px;
+  padding: 50px 10px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1800px;
+}
+
+.jacket-card {
+  background-color: #efefef;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+.jacket-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.jacket-card-text-and-icon {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-basis: 100%;
+  position: relative;
+}
+
+.jacket-autumn-news-text {
+  color: #0a3641;
+  font-family: "League Gothic", "sans serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  padding-top: 1rem;
+}
+
+.jacket-title {
+  display: flex;
+  color: #0a3641;
+  font-family: "League Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 2rem;
+  padding-right: 3rem;
+}
+
+.heart-icon {
+  width: 31px;
+  height: 24px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}

@@ -1,0 +1,227 @@
+.cart-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 29px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-width: 90vh;
+  max-height: auto;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #0a3641;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "League Gothic";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 5px;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+
+.cart-item {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.cart-box-outer {
+  display: flex;
+flex-direction: row;
+}
+
+.remove-btn {
+  color: #fff;
+  background-color: #c2964c;
+  font-family: league gothic;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: #fff;
+}
+
+button  {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #0a3641;
+  
+}
+ p {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.cart-item img {
+  width: 150px;
+  
+}
+
+.checkout-text {
+  padding: 1rem;
+  color: #0a3641;
+}
+
+#total-price {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ font-size: 2rem;
+}
+
+.h2cart {
+  display: flex;
+  justify-content: center;
+  color: #c2964c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "League Gothic";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 5px;
+  padding-top: 5rem;
+  text-align: center;
+  margin: auto;
+}
+
+.cart-suprised {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.cart-button {
+  width: 16rem;
+  height: 4rem;
+  flex-wrap: wrap;
+  background-color: #c2964c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "League Gothic", "sans-serif";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cart-line {
+  display: flex;
+  max-width: 100%;
+  height: 2px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.product {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.product img {
+  width: 300px;
+  height: 400px;
+}
+
+.product h1 {
+  padding: 2rem;
+}
+
+#add-to-cart {
+  background-color: #c2964c;
+  color: #fff;
+  padding: 1rem;
+  font-family: "League Gothic", "sans-serif";
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/*----------cartForm-----------*/
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+
+@media (max-width: 845px) {
+  .cart-box {
+    max-width: 70vh;
+    margin: 1rem;
+  }
+
+  .cart-line {
+    display: flex;
+    width: 70vh;
+  }
+}
+
+@media (max-width: 845px) {
+  .cart-box {
+    max-width: ;
+  }
+}
