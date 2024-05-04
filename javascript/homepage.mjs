@@ -1,4 +1,4 @@
-import {hamMenu} from "./hamburger.mjs";
+
 
 // Function to fetch products from the API
 async function fetchProducts() {
