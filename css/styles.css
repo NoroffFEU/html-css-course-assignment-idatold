@@ -113,7 +113,7 @@
 }
 
 .h1-wrapper-with-blob {
-  background: url("/assets/images/Blank\ 2000\ x\ 2000\ 1blobmainpage.png");
+  background: url("../assets/images/Blank\ 2000\ x\ 2000\ 1blobmainpage.png");
   max-width: 926px;
   height: 524px;
   display: flex;
