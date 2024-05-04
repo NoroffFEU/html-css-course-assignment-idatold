@@ -3,7 +3,7 @@
   align-items: center;
   min-height: 40rem;
   justify-content: center;
-  background: url("/assets/images/mainheadertruesize-min.png") no-repeat;
+  background: url("./assets/images/mainheadertruesize-min.png") no-repeat;
   background-size: cover;
   background-position: bottom;
   margin-bottom: 2rem;
@@ -70,12 +70,12 @@
 }
 
 .image-1 {
-  background: url("/assets/images/shutterstock_2010997055\ 2yellowrainjacket.png")
+  background: url("./assets/images/shutterstock_2010997055\ 2yellowrainjacket.png")
     top left / cover no-repeat;
 }
 
 .image-2 {
-  background: url("/assets/images/shutterstock_2010997055\ 3road.png") top left /
+  background: url("./assets/images/shutterstock_2010997055\ 3road.png") top left /
     cover no-repeat;
 }
 
