@@ -57,7 +57,7 @@ async function renderData(data) {
 
             // Create an anchor element to wrap the product details
             const anchor = document.createElement("a");
-            anchor.href = `/product/index.html?id=${item.id}`; // Assuming you have an 'id' property in your data
+            anchor.href = `./product/index.html?id=${item.id}`; // Assuming you have an 'id' property in your data
             anchor.classList.add("product-link"); // Add a class for styling
             anchor.addEventListener("click", (event) => {
                 event.preventDefault(); // Prevent the default behavior of anchor click
