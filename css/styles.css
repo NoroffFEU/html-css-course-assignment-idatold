@@ -70,12 +70,12 @@
 }
 
 .image-1 {
-  background: url("./assets/images/shutterstock_2010997055\ 2yellowrainjacket.png")
+  background: url("../assets/images/shutterstock_2010997055\ 2yellowrainjacket.png")
     top left / cover no-repeat;
 }
 
 .image-2 {
-  background: url("./assets/images/shutterstock_2010997055\ 3road.png") top left /
+  background: url("../assets/images/shutterstock_2010997055\ 3road.png") top left /
     cover no-repeat;
 }
 
