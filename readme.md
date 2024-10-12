@@ -21,7 +21,7 @@ RainyDays is a cozy and responsive e-commerce site designed to offer customers h
 Visit the live site here: [rainydays-idatold.netlify.app](https://rainydays-idatold.netlify.app/) 🌐
 
 ## 🌟 Features
-- 🛍️ Fully responsive e-commerce site.
+- 🛍️ Responsive e-commerce site.
 - 💧 Intuitive navigation and product filtering.
 - 🌈 Product sorting and checkout functionality.
 - 🧑‍💻 User-friendly interface and design.
