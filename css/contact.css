@@ -1,0 +1,219 @@
+/*------------------------------------------Body----------------------------------------*/
+body {
+  background-color: #698388;
+}
+
+main {
+  font-family: "league gothic", "sans serif";
+}
+
+.all-forms-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-group-all-lines {
+  width: 350px;
+  flex-wrap: wrap;
+}
+.h1-form {
+  display: flex;
+  color: #c2964c;
+  flex-shrink: 0;
+  font-family: "League Gothic";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10rem;
+}
+
+h2 {
+  margin: auto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.customer-care-h2 {
+  display: flex;
+  font-size: 48px;
+  font-style: normal;
+  color: #c2964c;
+  background-image: url("../assets/images/Contact/blobtopcontact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.customer-care-text {
+  font-family: "poppins";
+  color: #ffffff;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  max-width: 400px;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  height: 80rem;
+  align-items: center;
+  background: url("../assets/images/Contact/bblobbackgroundcontactform2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 20rem;
+}
+
+.map-image-and-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-left: 5rem;
+  padding-top: 21rem;
+  flex-wrap: wrap;
+}
+
+.form-icons {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+.email-text {
+  font-family: "poppins";
+  color: #ffffff;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.email-text img {
+  width: 22px;
+  height: 17.6px;
+}
+.mapicon-text {
+  font-family: "poppins";
+  color: #ffffff;
+  padding-left: 2rem;
+}
+
+.phone-text {
+  font-family: "poppins";
+  color: #ffffff;
+  padding-left: 2rem;
+}
+.phone-and-text {
+  display: flex;
+}
+
+.mappin-and-text {
+  display: flex;
+}
+
+.email-and-text {
+  display: flex;
+}
+.form-group {
+  margin-bottom: 20px;
+  max-width: 600px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+::placeholder {
+  font-family: "poppins", "sans serif";
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.input-form-1 {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 3px solid #c2964c;
+  box-sizing: border-box;
+  transition: border-bottom-color 0.3s;
+  background-color: #0a3641;
+  display: flex;
+}
+
+.input-form-1:focus {
+  border-bottom-color: #c2964c;
+}
+
+.form-button {
+  background-color: #c2964c;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-button:hover {
+  background-color: #698388;
+}
+
+.map-swap {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    display: flex;
+
+    margin: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: 80rem;
+    align-items: center;
+    background: none;
+    background-color: #0a3641;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20rem;
+  }
+  .map-image-and-icons {
+    display: none;
+
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .customer-care-h2 {
+    display: none;
+  }
+
+  main {
+    background-color: #0a3641;
+  }
+
+  .map-swap {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}

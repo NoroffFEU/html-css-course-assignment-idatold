@@ -1,0 +1,258 @@
+.header-image-container {
+  display: flex;
+  align-items: center;
+  min-height: 40rem;
+  justify-content: center;
+  background: url("../assets/images/mainheadertruesize-min.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 2rem;
+}
+
+.logo-jpg {
+  max-width: 345px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.logo-jpg img {
+  width: 100%;
+  height: auto;
+}
+
+.jacket-icon {
+  display: none;
+}
+
+.carousel {
+  max-width: 60%;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 4rem;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-link {
+  color: #0a3641;
+  text-transform: uppercase;
+  text-align: center;
+}
+.carousel-link :hover {
+  color: #c2964c;
+}
+
+.product-slide {
+  flex: 0 0 33.33%; /* Display three products at a time */
+  margin: 0 10px;
+}
+
+/*-------------------------main---------------------------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 778px;
+  height: 563px;
+  background: black;
+  flex-wrap: wrap;
+}
+
+.image-1 {
+  background: url("../assets/images/shutterstock_2010997055\ 2yellowrainjacket.png")
+    top left / cover no-repeat;
+}
+
+.image-2 {
+  background: url("../assets/images/shutterstock_2010997055\ 3road.png") top left /
+    cover no-repeat;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  background: #888;
+  margin-top: 3rem;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.link a {
+  text-transform: uppercase;
+  font-family: "league gothic";
+  font-size: 3rem;
+  color: white;
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.yellow {
+  background: #c2964c;
+}
+
+.yellow a {
+  margin-right: 1rem;
+}
+
+.green {
+  background: #0a3641;
+  margin-top: 8.6rem;
+}
+
+.h1-wrapper-with-blob {
+  background: url("../assets/images/Blank\ 2000\ x\ 2000\ 1blobmainpage.png");
+  max-width: 926px;
+  height: 524px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.h1-wrapper-with-blob h1 {
+  font-family: "poppins", "sans serif";
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10rem;
+  flex-direction: row;
+}
+
+.procentage-icon {
+  display: flex;
+  max-width: 121px;
+  max-height: 120.687px;
+  margin-bottom: 13rem;
+  flex-wrap: wrap;
+}
+
+/*-------------------media---------------------*/
+@media (max-width: 562px) {
+  .yellow {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    max-width: 450px;
+  }
+
+  .image-1 {
+    background: none;
+    height: 1rem;
+    max-width: 0px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-1 {
+    background: none;
+    height: 1rem;
+    max-width: 0px;
+    flex-wrap: wrap;
+  }
+
+  .image-2 {
+    max-width: 90vw;
+    height: 20rem;
+  }
+  .yellow {
+    background: rgba(10, 54, 65, 0.31);
+    display: flex;
+    margin-top: -20rem;
+    max-width: 90vw;
+  }
+
+  .yellow a {
+    text-decoration: underline;
+  }
+
+  .green {
+    background: #c2964c;
+    margin-top: 8.6rem;
+    max-width: 90vw;
+    margin-bottom: 5rem;
+  }
+  .jacket-icon {
+    display: flex;
+    padding-bottom: 4rem;
+  }
+
+  .procentage-icon {
+    display: none;
+  }
+
+  .h1-wrapper-with-blob h1 {
+    display: none;
+  }
+
+  .logo-jpg img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-1 {
+    width: 578px;
+    height: 363px;
+    flex-wrap: wrap;
+  }
+
+  .image-2 {
+    width: 578px;
+    height: 363px;
+    flex-wrap: wrap;
+  }
+
+  .h1-wrapper-with-blob {
+    width: 578px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .h1-wrapper-with-blob {
+    max-width: 778px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: none;
+    background-color: #0a3641;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+
+  .procentage-icon {
+    display: none;
+  }
+  .h1-wrapper-with-blob h1 {
+    font-size: 25px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+}
